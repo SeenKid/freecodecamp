@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  background-color: grey;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>Make a survey form</title>
+</head>
+<body>
+  <center>
+  <h1 id="title"> TITLE !!!! </h1>
+  <p id="description"> this is a survey form </p>
+</center>
+<hr>
+
+<form method="post" id="survey-form">
+  <center>
+    <input type="username" name="username" id="name-label" placeholder="Name" required><br/>
+    <input type="email" name="email" id="email-label" placeholder="E-mail" required><br/>
+    <!--<input type="password" name="password" id="password" placeholder="Password" required><br/> -->
+    <input type="number" name="number" id="number-label" min="1" max="5" placeholder="number" required><br/>
+
+<select id="dropdown">
+<option value=”1”>option1</option>
+<option value=”2”>option2</option>
+<option value=”3”>option3</option>
+<option value=”4”>option4</option>
+</select>
+
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br> 
+
+<textarea id="story" name="story" rows="5" cols="33">
+additional comments
+</textarea>
+<hr>
+<input type="submit" name="submit" id="submit" value="Submit">
+</center>
+  </form>
+  <p> made by TweekLG </p>
+  </body>
+</html>
